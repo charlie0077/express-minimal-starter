@@ -1,8 +1,9 @@
 import express from 'express'
-import item from './item'
+import itemCtrl from '../controller/item'
 
 const router = express.Router()
 
-router.use('/item', item)
+router.route('/')
+  .get(itemCtrl.get)
 
 export default router
