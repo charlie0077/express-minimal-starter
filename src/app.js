@@ -3,9 +3,10 @@ import app from './config/express'
 import bunyan from 'bunyan'
 
 const log = bunyan.createLogger({name: 'app'})
+const port = process.env.PORT || config.port
 
-app.listen(config.port, () => {
-  log.info(`Server started on port ${config.port} (${config.env})`)
+app.listen(port, () => {
+  log.info(`Server started on port ${port} (${config.env})`)
 })
 
 export default app
