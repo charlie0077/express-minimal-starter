@@ -1,9 +1,15 @@
-import express from 'express'
+import Router from 'express-promise-router'
 import itemCtrl from '../controller/item'
 
-const router = express.Router()
+const router = Router()
 
 router.route('/')
   .get(itemCtrl.get)
+
+router.route('/async')
+  .get(itemCtrl.getAsync)
+
+router.route('/sync')
+  .get(itemCtrl.getSync)
 
 export default router

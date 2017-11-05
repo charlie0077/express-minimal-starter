@@ -1,7 +1,7 @@
-import express from 'express'
+import Router from 'express-promise-router'
 import item from './item'
 
-const router = express.Router()
+const router = Router()
 
 router.use('/item', item)
 
