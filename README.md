@@ -1,7 +1,7 @@
 # Features
 1. Minimal dependencies
 2. Clean and consise example for API and error handling
-3. Use ES7, async, await and appropriate middleware
+3. Use ES7, async, await and appropriate router middleware
 
 # Get Started
 1. Go to the demo site or run 'yarn install && yarn dev' in your terminal
